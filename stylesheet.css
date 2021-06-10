@@ -1,0 +1,290 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: fonts-home;
+  src: url(fonts/Motiva-Sans.ttf);
+}
+
+.logo {
+  width: 250px;
+  margin-top: -15px;
+}
+
+body {
+  font-family: "fonts-home";
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: #2a2a2a;
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #2a2a2a;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.header-left {
+  float: left;
+  margin-left: -65px;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.login {
+  background-color: teal;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-top {
+  max-width: 1600px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container-top p {
+  margin-top: 10px;
+
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-size: cover;
+  background-image: url(wallpaper/home.jpg);
+  background-color: #171a21;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: left;
+}
+
+.top-wrapper h2 {
+  opacity: 0.7;
+  font-size: 25px;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: left;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: white;
+  text-align: left;
+}
+
+.btn-wrapper {
+  text-align: left;
+  margin: 20px 0;
+  margin-top: 50px;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.read {
+  background-color: teal;
+  font-size: 15px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+.menu-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #171a21;
+  text-align: center;
+}
+
+.menu-wrapper h2 {
+  color : white;
+}
+
+.menu {
+  float: left;
+  width: 25%;
+}
+
+.menu-icon-category {
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-icon-game {
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-icon-game img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.75);
+  transition: all 0.4s ease;
+}
+
+.menu-icon-category img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.75);
+  transition: all 0.4s ease;
+}
+
+.menu-icon-category figcaption {
+  color: white;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: all 0.6s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+.menu-icon-category:hover img {
+  transform: scale(0.5);
+  filter: blur(4px) brightness(70%);
+}
+
+.menu-icon-game:hover img {
+  transform: scale(0.5);
+  filter: blur(4px) brightness(70%);
+}
+
+.menu-icon-category:hover figcaption {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.menu-icon-game p {
+  position: absolute;
+  top: 44%;
+  width: 100%;
+  color: white;
+}
+
+.menu-icon-category p {
+  position: absolute;
+  top: 44%;
+  width: 100%;
+  color: white;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #b3aeb5;
+}
+
+footer img {
+  width: 250px;
+  margin-top: -15px;
+  margin-left: -65px;
+}
+
+footer p {
+  color: white;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #2a2a2a;
+}
+
+.footer-bot a {
+  float:right;
+  color:white;
+  padding-left: 25px;
+  padding-right: -20px;
+  padding-bottom: 40px;
+  margin-top: -50px;
+  margin-right: 40px;
+  text-align: center;
+}
+
